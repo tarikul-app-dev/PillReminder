@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "3844445321",
+    "firebase_url": "https://fir-example-2acbb.firebaseio.com",
+    "project_id": "fir-example-2acbb",
+    "storage_bucket": "fir-example-2acbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3844445321:android:aa91a95b87515a38",
+        "android_client_info": {
+          "package_name": "com.example.aamirkhan.pillreminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3844445321-7la9540j7g336pcegtlgcu4sm5d3ddjg.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "3844445321-7la9540j7g336pcegtlgcu4sm5d3ddjg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6kYDg3iL9cw60AvT7RX2LVeZ1Psw8Mpc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

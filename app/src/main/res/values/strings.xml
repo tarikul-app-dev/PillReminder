@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pill Reminder</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="title_activity_add_detail">AddDetailActivity</string>
+    <string name="title_activity_putt_details">PuttDetailsActivity</string>
+    <string name="title_activity_number">NumberActivity</string>
+    <string name="title_activity_medicine">MedicineActivity</string>
+    <string name="title_activity_mobilenum">MobilenumActivity</string>
+
+</resources>

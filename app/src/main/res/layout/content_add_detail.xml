@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FirstActivity1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.aamirkhan.pillreminder.AddDetailActivity"
+    tools:showIn="@layout/activity_add_detail">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="65dp"
+        app:srcCompat="@drawable/morning"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="17dp"
+        app:srcCompat="@drawable/night" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/imageView2"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/imageView"
+        app:srcCompat="@drawable/noon" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/imageView2"
+        app:srcCompat="@drawable/evening" />
+    <com.luseen.luseenbottomnavigation.BottomNavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:bnv_active_color="#00B000"
+        app:bnv_colored_background="true"
+        android:background="#F9F9F9"
+        app:bnv_shadow="true"
+        app:bnv_tablet="false"
+        app:bnv_viewpager_slide="true"
+        app:bnv_with_text="false"
+
+        />
+</RelativeLayout>

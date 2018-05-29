@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.aamirkhan.pillreminder.PuttDetailsActivity"
+    tools:showIn="@layout/activity_putt_details">
+
+    <ImageView
+        android:id="@+id/img_camera"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="42dp"
+
+        app:srcCompat="@drawable/camera" />
+
+    <ImageView
+        android:id="@+id/img_show"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/img_camera"
+        android:layout_marginEnd="33dp"
+        app:srcCompat="@drawable/image" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/img_show"
+        android:layout_alignStart="@+id/img_camera"
+        android:layout_below="@+id/img_camera"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:background="@drawable/bgedittext"
+        android:gravity="center"
+        android:hint="Dose Name"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+         />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/bgedittext"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Dose Quantity"
+        android:inputType="number"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_light"
+        android:textCursorDrawable="@color/white" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="54dp"
+        android:text="Morning"
+        android:textColorLink="@android:color/background_light"
+        android:textCursorDrawable="@color/white" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox"
+        android:layout_alignBottom="@+id/checkBox"
+        android:layout_alignEnd="@+id/editText2"
+        android:text="AfterNoon"
+        android:textColorLink="@android:color/background_light"
+        android:textCursorDrawable="@color/white" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="13dp"
+        android:text="Evening"
+        android:textCursorDrawable="@color/white" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox2"
+        android:layout_alignTop="@+id/checkBox3"
+        android:text="Night"
+        android:textCursorDrawable="@color/white" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:background="@drawable/buttonstyle"
+        android:layout_below="@+id/checkBox3"
+        android:layout_toEndOf="@+id/img_camera" />
+</RelativeLayout>
